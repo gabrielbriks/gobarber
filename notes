@@ -1,0 +1,14 @@
+Add sucrase:
+  - Vai possibilitar a utilização de fetuares mais recente do javascript como
+  utilizar o "import" em vez do "require";
+  - Então em vez de utilizar o node para executar nosso app configuramos o sucrase
+  para executar nosso app juntamente com o nodemon
+
+Add nodemon:
+  - O nodemon vai nos ajudar de forma bem produtiva, pois ele ira automaticamente
+  reiniciar o servido quando existir alguma alteração no código.
+  - Iremos criar um file de configuração dele para definir alguns padrões, como 
+  utilizar o sucrase e etc.
+  - Na aparte do "execMap" estaremos falando para o nodemon que para arquivos 
+  'js' irá utilizar o sucrase e em vez do node.
+  - 
