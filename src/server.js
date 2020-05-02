@@ -1,8 +1,4 @@
-const express = require("express");
+const app = require('./app');
 
-class App {
-  /* Metodo que é chamado automaticamente ao instancia essa class*/
-  constructor() {
-    this.server = express();
-  }
-}
+
+app.listen(3333)
