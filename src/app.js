@@ -2,20 +2,20 @@ import express from 'express';
 import routes from './routes';
 
 class App {
-  /* Metodo que é chamado automaticamente ao instancia essa class*/
+  /* Metodo que é chamado automaticamente ao instancia essa class */
   constructor() {
     this.server = express();
 
-    //Adicionando esses métodos aqui pois se não eles nunca vão ser chamados
+    // Adicionando esses métodos aqui pois se não eles nunca vão ser chamados
     this.middlewares();
     this.routes();
   }
 
-  middlewares(){
-    this.server.use(express.json())
+  middlewares() {
+    this.server.use(express.json());
   }
 
-  routes(){
+  routes() {
     this.server.use(routes);
   }
 }
